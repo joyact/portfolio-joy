@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <title>포트폴리오 - 이주영</title>
+  </head>
+  <body>
+    <div class="theme">
+      <header>
+        <h3 class="logo blue-underline"><a href="index.html">joy<span>A</span>ct</a></h3>
+        <nav class="nav-menu">
+          <ul>
+            <li class="blue-underline"><a href="#aboutme" class="scroll">About me</a></li>
+            <li class="blue-underline"><a href="#project" class="scroll">Projects</a></li>
+            <li class="blue-underline"><a href="#blog" class="scroll">Blog</a></li>
+          </ul>
+          <div id="toggle-btn">
+            <input type="checkbox" />
+            <span></span>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section id="home">
+          <div class="intro-txt">
+            <h3>Welcome to joyAct, I am</h3>
+            <h1 class="animate-flow">
+              <span class="txt-wrap">
+                <span class="letters">Juyoung Lee</span>
+              </span>
+            </h1>
+            <p>FRONT-END DEVELOPER</p>
+          </div>
+          <div class="arrow bounce">
+            <a class="scroll" href="#aboutme"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></a>
+          </div>
+        </section>
+        <section id="aboutme">
+          <div class="container">
+            <div class="content-wrap hidden">
+              <div class="about-profile">
+                <img src="images/profile.png" alt="프로필" />
+              </div>
+              <div class="about-myself">
+                <div class="quotes">
+                  <span>Dream Big,</span>
+                  <span>Act Now!</span>
+                </div>
+                <h1 class="title">I am joyAct</h1>
+                <h2>Juyoung Lee</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="project">
+          <div class="container">
+            <div class="content-header hidden">
+              <h1 class="title"><span>P</span>rojects</h1>
+            </div>
+            <div class="content-wrap">
+              <div id="myTab">
+                <!-- Tab links -->
+                <ul class="tab-btn hidden">
+                  <li class="active" data-title="WEB"><p>Responsive Web</p></li>
+                  <li data-title="JS"><p>Javascript</p></li>
+                </ul>
+
+                <!-- Tab content -->
+                <div class="columns tabcontent-wrap">
+                  <div id="WEB" class="tabcontent active">
+                    <div class="col">
+                      <figure class="link-box img-scaled">
+                        <img src="images/pf/wide01.jpg" class="hidden" alt="포트폴리오-케이원" />
+                        <figcaption>
+                          <ul class="tags">
+                            <li>반응형</li>
+                            <li>다국어</li>
+                            <li>광고/홍보</li>
+                            <li>10 Pages</li>
+                          </ul>
+                          <h3>케이원커뮤니케이션</h3>
+                          <a href="http://konemkt.com/" target="_blank" class="link-btn">Visit Website</a>
+                        </figcaption>
+                        <div class="overlay"></div>
+                      </figure>
+                    </div>
+                    <div class="col">
+                      <figure class="link-box img-scaled">
+                        <img src="images/pf/wide02.jpg" class="hidden" alt="포트폴리오-티밥" />
+                        <figcaption>
+                          <ul class="tags">
+                            <li>반응형</li>
+                            <li>다국어</li>
+                            <li>통신/판매</li>
+                            <li>4 Pages</li>
+                          </ul>
+                          <h3>TiBAB</h3>
+                          <a href="http://tibabio.10pages.co.kr/" target="_blank" class="link-btn">Visit Website</a>
+                        </figcaption>
+                        <div class="overlay"></div>
+                      </figure>
+                    </div>
+                    <div class="col">
+                      <figure class="link-box img-scaled">
+                        <img src="images/pf/wide03.jpg" class="hidden" alt="포트폴리오-FEAKOREA" />
+                        <figcaption>
+                          <ul class="tags">
+                            <li>반응형</li>
+                            <li>서비스/컨설팅</li>
+                            <li>9 Pages</li>
+                          </ul>
+                          <h3>Nemasis</h3>
+                          <a href="http://yoon.10pages.co.kr/" target="_blank" class="link-btn">Visit Website</a>
+                        </figcaption>
+                        <div class="overlay"></div>
+                      </figure>
+                    </div>
+                    <div class="col">
+                      <figure class="link-box img-scaled">
+                        <img src="images/pf/wide04.jpg" class="hidden" alt="포트폴리오-광희생활건강" />
+                        <figcaption>
+                          <ul class="tags">
+                            <li>반응형</li>
+                            <li>서비스/홍보</li>
+                            <li>9 Pages</li>
+                          </ul>
+                          <h3>광희생활건강</h3>
+                          <a href="https://www.ghhnb.com/" target="_blank" class="link-btn">Visit Website</a>
+                        </figcaption>
+                        <div class="overlay"></div>
+                      </figure>
+                    </div>
+                    <div class="col">
+                      <figure class="link-box img-scaled">
+                        <img src="images/pf/wide05.jpg" class="hidden" alt="포트폴리오-볼베어파크" />
+                        <figcaption>
+                          <ul class="tags">
+                            <li>반응형</li>
+                            <li>서비스/컨설팅</li>
+                            <li>8 Pages</li>
+                          </ul>
+                          <h3>볼베어파크</h3>
+                          <a href="http://ballbearpark.10pages.co.kr/" target="_blank" class="link-btn">Visit Website</a>
+                        </figcaption>
+                        <div class="overlay"></div>
+                      </figure>
+                    </div>
+                    <div class="col">
+                      <figure class="link-box img-scaled">
+                        <img src="images/pf/wide06.jpg" class="hidden" alt="포트폴리오-트래스코" />
+                        <figcaption>
+                          <ul class="tags">
+                            <li>반응형</li>
+                            <li>다국어</li>
+                            <li>관광/통신</li>
+                            <li>6 Pages</li>
+                          </ul>
+                          <h3>트래스코</h3>
+                          <a href="http://www.traesco.co.kr/" target="_blank" class="link-btn">Visit Website</a>
+                        </figcaption>
+                        <div class="overlay"></div>
+                      </figure>
+                    </div>
+                    <div class="col">
+                      <figure class="link-box img-scaled">
+                        <img src="images/pf/01.jpg" class="hidden" alt="포트폴리오-노무법인일신" />
+                        <figcaption>
+                          <ul class="tags">
+                            <li>반응형</li>
+                            <li>법률</li>
+                            <li>13 Pages</li>
+                          </ul>
+                          <h3>노무법인 일신</h3>
+                          <a href="http://h2taxtax.10pages.co.kr/" target="_blank" class="link-btn">Visit Website</a>
+                        </figcaption>
+                        <div class="overlay"></div>
+                      </figure>
+                    </div>
+                    <div class="col">
+                      <figure class="link-box img-scaled">
+                        <img src="images/pf/02.jpg" class="hidden" alt="포트폴리오-미래콜렉션" />
+                        <figcaption>
+                          <ul class="tags">
+                            <li>반응형</li>
+                            <li>제조/전자</li>
+                            <li>8 Pages</li>
+                          </ul>
+                          <h3>미래콜렉션</h3>
+                          <a href="http://mirae-label.kr/" target="_blank" class="link-btn">Visit Website</a>
+                        </figcaption>
+                        <div class="overlay"></div>
+                      </figure>
+                    </div>
+                    <div class="col">
+                      <figure class="link-box img-scaled">
+                        <img src="images/pf/03.jpg" class="hidden" alt="포트폴리오-태성글로벌텍" />
+                        <figcaption>
+                          <ul class="tags">
+                            <li>반응형</li>
+                            <li>제조/전자</li>
+                            <li>10 Pages</li>
+                          </ul>
+                          <h3>태성글로벌텍</h3>
+                          <a href="http://ydw851.10pages.co.kr/" target="_blank" class="link-btn">Visit Website</a>
+                        </figcaption>
+                        <div class="overlay"></div>
+                      </figure>
+                    </div>
+                    <div class="col">
+                      <figure class="link-box img-scaled">
+                        <img src="images/pf/04.jpg" class="hidden" alt="포트폴리오-한국바이오" />
+                        <figcaption>
+                          <ul class="tags">
+                            <li>반응형</li>
+                            <li>다국어</li>
+                            <li>협회</li>
+                            <li>11 Pages</li>
+                          </ul>
+                          <h3>한국바이오플라스틱협회</h3>
+                          <a href="http://kbpa.net/" target="_blank" class="link-btn">Visit Website</a>
+                        </figcaption>
+                        <div class="overlay"></div>
+                      </figure>
+                    </div>
+                    <div class="col">
+                      <figure class="link-box img-scaled">
+                        <img src="images/pf/05.jpg" class="hidden" alt="포트폴리오-다폼" />
+                        <figcaption>
+                          <ul class="tags">
+                            <li>반응형</li>
+                            <li>서비스/컨설팅</li>
+                            <li>10 Pages</li>
+                          </ul>
+                          <h3>다폼</h3>
+                          <a href="http://anjihoon1.10pages.co.kr/" target="_blank" class="link-btn">Visit Website</a>
+                        </figcaption>
+                        <div class="overlay"></div>
+                      </figure>
+                    </div>
+                    <div class="col">
+                      <figure class="link-box img-scaled">
+                        <img src="images/pf/06.jpg" class="hidden" alt="포트폴리오-중앙기업" />
+                        <figcaption>
+                          <ul class="tags">
+                            <li>반응형</li>
+                            <li>무역/물류</li>
+                            <li>9 Pages</li>
+                          </ul>
+                          <h3>중앙기업보험대리점</h3>
+                          <a href="http://air8717.10pages.co.kr/" target="_blank" class="link-btn">Visit Website</a>
+                        </figcaption>
+                        <div class="overlay"></div>
+                      </figure>
+                    </div>
+                  </div>
+
+                  <div id="JS" class="tabcontent">
+                    <div class="col">
+                      <figure class="link-box img-scaled">
+                        <img src="images/pf/03.png" class="hidden" alt="포트폴리오" />
+                        <figcaption>
+                          <ul class="tags">
+                            <li>반응형</li>
+                            <li>다국어</li>
+                            <li>9 Pages</li>
+                          </ul>
+                          <h3>PROJECT NAME</h3>
+                          <a href="#" target="_blank" class="link-btn">Visit Website</a>
+                        </figcaption>
+                        <div class="overlay"></div>
+                      </figure>
+                    </div>
+                    <div class="col">
+                      <figure class="link-box img-scaled">
+                        <img src="images/pf/03.png" class="hidden" alt="포트폴리오" />
+                        <figcaption>
+                          <ul class="tags">
+                            <li>반응형</li>
+                            <li>다국어</li>
+                            <li>9 Pages</li>
+                          </ul>
+                          <h3>PROJECT NAME</h3>
+                          <a href="#" target="_blank" class="link-btn">Visit Website</a>
+                        </figcaption>
+                        <div class="overlay"></div>
+                      </figure>
+                    </div>
+                    <div class="col">
+                      <figure class="link-box img-scaled">
+                        <img src="images/pf/03.png" class="hidden" alt="포트폴리오" />
+                        <figcaption>
+                          <ul class="tags">
+                            <li>반응형</li>
+                            <li>다국어</li>
+                            <li>9 Pages</li>
+                          </ul>
+                          <h3>PROJECT NAME</h3>
+                          <a href="#" target="_blank" class="link-btn">Visit Website</a>
+                        </figcaption>
+                        <div class="overlay"></div>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="blog">
+          <div class="container">
+            <div class="content-header hidden">
+              <h1 class="title"><span>B</span>log</h1>
+              <p>My weekly habit to deeply understand about the Front-End and to keep up with the latest in Web Development.</p>
+            </div>
+            <div class="content-wrap box">
+              <div class="col hidden">
+                <div class="blog-post">
+                  <div class="img-scaled">
+                    <img src="images/blog1.jpg" alt="블로그" />
+                  </div>
+                  <div class="txt-wrap">
+                    <h3>The easiest concept between a ‘Library’ and a ‘Framework’</h3>
+                    <span>Aug. 18, 2020</span>
+                    <p>If you have experienced in Software Development Industry, you may have wondered or heard this question at least once. It’s also ...</p>
+                  </div>
+                  <a href="" target="_blank" class="link-btn">Read More</a>
+                </div>
+              </div>
+              <div class="col hidden">
+                <div class="blog-post">
+                  <div class="img-scaled">
+                    <img src="images/blog2.jpg" alt="블로그" />
+                  </div>
+                  <div class="txt-wrap">
+                    <h3>Javascript Trends in 2020</h3>
+                    <span>Aug. 12, 2020</span>
+                    <p>Javascript has been the most popular program ming language in the world over the past few years. If you are a developer, you may wonder about what the future of the programming ...</p>
+                  </div>
+                  <a href="https://medium.com/@joyAct/javascript-trends-in-2020-c779ab137f22" target="_blank" class="link-btn">Read More</a>
+                </div>
+              </div>
+              <div class="col hidden">
+                <div class="blog-post">
+                  <div class="img-scaled">
+                    <img src="images/blog3.jpg" alt="블로그" />
+                  </div>
+                  <div class="txt-wrap">
+                    <h3>Front-end Roadmap in 2020</h3>
+                    <span>Aug. 06, 2020</span>
+                    <p>Step by step guide to becoming a modern frontend developer. If you want to become a front-end developer, you should check out this Front-end Roadmap! It will help you to keep ...</p>
+                  </div>
+                  <a href="https://medium.com/@joyAct/front-end-roadmap-in-2020-aa7f5badd721" target="_blank" class="link-btn">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <a href="https://twitter.com/joyAct_" target="_blank"><i class="social-media fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="social-media fab fa-codepen"></i></a>
+        <a href="https://github.com/joyact" target="_blank"><i class="social-media fab fa-github"></i></a>
+        <a href="#" target="_blank"><i class="social-media fab fa-linkedin-in"></i></a>
+      </footer>
+    </div>
+    <script src="js/animation.js"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/jquery.scrollTo.min.js"></script> -->
+  </body>
+</html>
