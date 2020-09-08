@@ -14,7 +14,6 @@ function toggleTemplate(elem, addclass) {
       item.classList.toggle(addclass);
     });
   } else {
-    elem.classList.toggle('transition');
     elem.classList.toggle(addclass);
   }
 }
@@ -23,6 +22,7 @@ const changeTheme = () => {
   const body = document.querySelector('.theme');
   const header = document.querySelector('header');
   const footer = document.querySelector('footer');
+  const box = document.querySelectorAll('.project-box figcaption');
   const link = document.querySelectorAll('a');
   const p = document.querySelectorAll('p');
   const img = document.querySelectorAll('img');
@@ -32,6 +32,7 @@ const changeTheme = () => {
   toggleTemplate(header, 'dark-bgcolor');
   toggleTemplate(footer, 'dark-ft-bgcolor');
 
+  toggleTemplate(box, 'dark-project');
   toggleTemplate(img, 'dark-img-opacity');
   toggleTemplate(link, 'dark-color');
   toggleTemplate(p, 'dark-p-color');
