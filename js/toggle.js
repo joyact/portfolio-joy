@@ -22,17 +22,21 @@ const changeTheme = () => {
   const body = document.querySelector('.theme');
   const header = document.querySelector('header');
   const footer = document.querySelector('footer');
+  const section = document.querySelectorAll('section');
+  const oddsection = document.querySelectorAll('.section');
   const box = document.querySelectorAll('.project-box figcaption');
   const link = document.querySelectorAll('a');
   const p = document.querySelectorAll('p');
   const img = document.querySelectorAll('img');
   console.dir(footer.localName);
 
-  toggleTemplate(body, 'dark-theme');
-  toggleTemplate(header, 'dark-bgcolor');
-  toggleTemplate(footer, 'dark-ft-bgcolor');
+  toggleTemplate(body, 'dark-all');
+  toggleTemplate(header, 'dark-bg-1');
+  toggleTemplate(footer, 'dark-bg-footer');
 
-  toggleTemplate(box, 'dark-project');
+  toggleTemplate(section, 'dark-bg-1');
+  toggleTemplate(oddsection, 'dark-bg-2');
+  toggleTemplate(box, 'dark-bg-2');
   toggleTemplate(img, 'dark-img-opacity');
   toggleTemplate(link, 'dark-color');
   toggleTemplate(p, 'dark-p-color');

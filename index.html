@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.0/css/all.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <title>포트폴리오 - 이주영</title>
@@ -11,7 +11,7 @@
   <body>
     <div class="theme">
       <header>
-        <h3 class="logo"><a href="index.html">joy<span>A</span>ct</a></h3>
+        <h3 class="logo"><a href="index.html">joy<b>A</b>ct</a></h3>
         <nav class="nav-menu">
           <ul>
             <li class="blue-underline"><a href="#aboutme" class="scroll">About me</a></li>
@@ -36,25 +36,30 @@
             <p>FRONT-END DEVELOPER</p>
           </div>
           <div class="arrow bounce">
-            <a class="scroll" href="#aboutme"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></a>
+            <a class="scroll" href="#aboutme"><img src="images/icon_scroll.png" alt="" /></a>
           </div>
+          <p>SCROLL</p>
         </section>
-        <section id="aboutme">
+        <section id="aboutme" class="section">
           <div class="container">
+            <!-- <div class="content-header hidden">
+              <h1 class="title"><span>A</span>bout me</h1>
+            </div> -->
             <div class="content-wrap hidden">
-              <div class="profile-img">
-                <div>
-                  <img src="images/profile.png" alt="프로필" />
-                </div>
-              </div>
-              <div class="profile-txt">
+              <div class="profile-l">
                 <div class="quotes">
                   <span>Dream Big,</span>
-                  <span>Act Now!</span>
+                  <span><b>A</b>ct Now.</span>
                 </div>
-                <h1 class="title">I am joyAct</h1>
-                <h2>Juyoung Lee</h2>
+                <div class="img-wrap">
+                  <img src="images/profile.png" alt="프로필" />
+                </div>
+                <div class="info">
+                  <h3>이주영 (Joy)</h3>
+                  <p>Front-end Developer</p>
+                </div>
               </div>
+              <div class="profile-r"></div>
             </div>
           </div>
         </section>
@@ -317,7 +322,7 @@
             </div>
           </div>
         </section>
-        <section id="blog">
+        <section id="blog" class="section">
           <div class="container">
             <div class="content-header hidden">
               <h1 class="title"><span>B</span>log</h1>
@@ -326,9 +331,7 @@
             <div class="content-wrap box">
               <div class="col hidden">
                 <div class="blog-post">
-                  <div class="img-scaled">
-                    <img src="images/blog1.jpg" alt="블로그" />
-                  </div>
+                  <img src="images/blog1.jpg" alt="블로그" />
                   <div class="txt-wrap">
                     <h3>The easiest concept between a ‘Library’ and a ‘Framework’</h3>
                     <span>Aug. 18, 2020</span>
@@ -339,9 +342,7 @@
               </div>
               <div class="col hidden">
                 <div class="blog-post">
-                  <div class="img-scaled">
-                    <img src="images/blog2.jpg" alt="블로그" />
-                  </div>
+                  <img src="images/blog2.jpg" alt="블로그" />
                   <div class="txt-wrap">
                     <h3>Javascript Trends in 2020</h3>
                     <span>Aug. 12, 2020</span>
@@ -352,9 +353,7 @@
               </div>
               <div class="col hidden">
                 <div class="blog-post">
-                  <div class="img-scaled">
-                    <img src="images/blog3.jpg" alt="블로그" />
-                  </div>
+                  <img src="images/blog3.jpg" alt="블로그" />
                   <div class="txt-wrap">
                     <h3>Front-end Roadmap in 2020</h3>
                     <span>Aug. 06, 2020</span>
