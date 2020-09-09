@@ -122,16 +122,20 @@ input[type='checkbox'] {
 }
 
 /* hover text style */
-.blue-underline {
+.txt-line-effect {
   background-image: linear-gradient(180deg, transparent 55%, rgb(170 170 170 / 0.5) 0);
   background-repeat: no-repeat;
   background-size: 0 100%;
   transition: background-size 0.4s ease;
 }
 
-.blue-underline:hover {
+.txt-line-effect:hover {
   background-size: 100% 100%;
   transition: all 0.5s;
+}
+
+.active {
+  background-size: 100%;
 }
 
 /* Main Page - HOME*/
@@ -377,21 +381,17 @@ img {
 }
 
 .tab-btn li {
-  padding: 10px 15px;
   text-align: center;
   font-size: 25px;
-  /* color: #999; */
-  border-bottom: 2px solid #ccc;
   cursor: pointer;
 }
-
+.tab-btn li + li {
+  margin-left: 40px;
+}
 .tab-btn li:hover {
-  /* color: #555; */
 }
 
 .tab-btn li.active {
-  /* color: #333 !important; */
-  border-color: #e03b3b;
 }
 
 /* Tab Content */
