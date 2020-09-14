@@ -355,6 +355,19 @@ img {
   letter-spacing: 2px;
 }
 
+.profile-r {
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+.skills {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 40px;
+}
+.skills i {
+  font-size: 70px;
+}
+
 /* Main Page - PORTFOLIO */
 
 #project .content-wrap {
@@ -630,7 +643,7 @@ footer {
   height: 20vh;
 }
 
-i {
+footer i {
   font-size: 30px;
   padding: 0 30px;
 }
