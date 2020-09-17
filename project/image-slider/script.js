@@ -1,4 +1,4 @@
-const imgSlider = document.getElementById('imgSlider');
+const imgSlider = document.getElementById('.container');
 const imgWrapper = document.querySelector('.slides');
 const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
