@@ -12,19 +12,19 @@
     <div class="theme">
       <header>
         <h3 class="logo"><a href="index.html">joy<b>A</b>ct</a></h3>
-        <nav class="nav-menu">
-          <div id="toggle-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <nav>
+          <div class="toggle-burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
           </div>
-          <ul>
+          <ul class="nav-links">
             <li class="txt-line-effect"><a href="#aboutme" class="scroll">About me</a></li>
             <li class="txt-line-effect"><a href="#project" class="scroll">Projects</a></li>
             <li class="txt-line-effect"><a href="#blog" class="scroll">Blog</a></li>
           </ul>
-          <div id="toggle-btn">
-            <input type="checkbox" />
+          <div class="theme-btn">
+            <input type="checkbox" onchange="toggleTheme()" id="theme" />
             <span></span>
           </div>
         </nav>
@@ -45,7 +45,7 @@
           </div>
           <p>SCROLL</p>
         </section>
-        <section id="aboutme" class="section">
+        <section id="aboutme">
           <div class="container">
             <div class="content-header hidden">
               <h1 class="title"><span>A</span>bout me</h1>
@@ -360,7 +360,7 @@
             </div>
           </div>
         </section>
-        <section id="blog" class="section">
+        <section id="blog">
           <div class="container">
             <div class="content-header hidden">
               <h1 class="title"><span>B</span>log</h1>
@@ -412,7 +412,7 @@
       </footer>
     </div>
     <script src="js/animation.js"></script>
-    <script src="js/toggle.js"></script>
+    <script src="js/header-toggle.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/script.js"></script>
     <!-- <script src="js/jquery.scrollTo.min.js"></script> -->
