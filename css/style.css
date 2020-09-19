@@ -258,6 +258,7 @@ input[type='checkbox'] {
 section {
   width: 100%;
   padding: 150px 0;
+  transition: all 0.5s ease;
 }
 
 section:nth-child(2n-1) {
@@ -690,6 +691,9 @@ img {
 }
 
 .project-box figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -697,11 +701,7 @@ img {
   width: 100%;
   height: 50%;
   opacity: 0.97;
-  background-color: #f7f7f7;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background-color: var(--color-2);
 }
 
 .project-name {
@@ -856,19 +856,6 @@ img {
   background-size: 100% 100%;
 }
 
-.fade-in {
-  animation: fadeInUp 0.7s;
-  -webkit-animation-duration: 0.7s;
-  animation-duration: 0.7s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-
 @media screen and (max-width: 767px) {
   .blog-post .txt-wrap {
     margin-top: 20px;
@@ -877,13 +864,13 @@ img {
 
 /* footer */
 footer {
-  transition: 0.5s ease;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: #f1f1f1;
   height: 20vh;
+  transition: 0.5s ease;
+  background-color: var(--color-3);
 }
 
 footer i {
@@ -910,6 +897,21 @@ footer i {
   footer {
     height: 12vh;
   }
+}
+
+/* Animation Collections */
+/* Scroll FadeIN Effect */
+.fade-in {
+  animation: fadeInUp 0.7s;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
 
 @-webkit-keyframes fadeInUp {
@@ -948,6 +950,7 @@ footer i {
   }
 }
 
+/* Main Page Bounce Effect */
 @-moz-keyframes bounce {
   0%,
   20%,
