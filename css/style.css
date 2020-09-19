@@ -232,6 +232,28 @@ input[type='checkbox'] {
   background-size: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 20px;
+    overflow-x: hidden;
+  }
+
+  /* header */
+  header {
+    padding: 0 15px;
+    justify-content: center;
+  }
+
+  .logo {
+    position: absolute;
+    font-size: 30px;
+  }
+
+  .animate-flow {
+    font-size: 45px;
+  }
+}
+
 /* common style */
 section {
   width: 100%;
@@ -249,6 +271,7 @@ section:nth-child(2n) {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 3rem;
 }
 
 .title {
@@ -297,6 +320,34 @@ section:nth-child(2n) {
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .col {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    padding: 80px 0;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+  .col {
+    width: 100%;
+  }
+  .content-header {
+    margin-bottom: 35px;
+  }
+  .content-header > p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
 }
 
 /* Main Page - HOME*/
@@ -405,12 +456,6 @@ img {
   top: 130px;
   right: -8%;
   z-index: 10;
-  /* width: 255px;
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10; */
 }
 
 .quotes > span {
@@ -418,11 +463,10 @@ img {
   font-family: 'sans-serif';
   font-weight: bold;
   font-size: 40px;
-  color: rgb(255 255 255 / 80%);
   font-style: italic;
   letter-spacing: -3px;
   padding-bottom: 2px;
-  opacity: 0.9;
+  opacity: 0.8;
   text-shadow: 0 5px 7px #aaa;
 }
 
@@ -461,16 +505,90 @@ img {
   box-sizing: border-box;
   padding-left: 60px;
 }
-.introduction p {
-  line-height: 1.8;
-}
+
 .skills {
   display: flex;
   justify-content: space-between;
   margin: 45px 0;
 }
+
 .skills i {
   font-size: 70px;
+}
+
+.introduction p {
+  line-height: 1.8;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .img-wrap {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .quotes {
+    width: 170px;
+    position: absolute;
+    top: 130px;
+    right: -8%;
+    z-index: 10;
+  }
+
+  .quotes > span {
+    font-size: 35px;
+  }
+
+  .skills {
+    margin: 0 0 20px;
+  }
+
+  .introduction p {
+    line-height: 1.6;
+    word-break: break-all;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* about me */
+  #aboutme .content-header {
+    margin-bottom: 60px;
+  }
+  #aboutme .content-wrap > div {
+    width: 100% !important;
+  }
+  .profile-l {
+    margin-bottom: 15px;
+  }
+  .info {
+    margin-top: 20px;
+    padding-top: 25px;
+  }
+  .profile-r {
+    padding-left: 0;
+  }
+  .img-wrap {
+    width: 100%;
+    height: auto;
+  }
+  .quotes {
+    width: 153px;
+    top: 120px;
+    right: 0;
+  }
+  .quotes span {
+    font-size: 32px;
+  }
+  .skills {
+    margin: 20px 0;
+  }
+  .skills i {
+    font-size: 50px;
+  }
+  .introduction p {
+    word-break: break-all;
+    line-height: 1.5;
+  }
 }
 
 /* Main Page - PORTFOLIO */
@@ -861,129 +979,7 @@ footer i {
   }
 }
 
-/* media query - common style */
-@media (max-width: 1300px) {
-  .container {
-    /* max-width: 960px; */
-    padding: 0 3rem;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  /* common */
-  .col {
-    width: 50%;
-  }
-
-  /* about me */
-  .img-wrap {
-    position: relative;
-    width: 100%;
-    height: auto;
-  }
-
-  .quotes {
-    width: 170px;
-    position: absolute;
-    top: 130px;
-    right: -8%;
-    z-index: 10;
-  }
-
-  .quotes > span {
-    font-size: 35px;
-  }
-  .skills {
-    margin: 0 0 20px;
-  }
-  .introduction p {
-    line-height: 1.6;
-    word-break: break-all;
-  }
-}
-
 @media screen and (max-width: 767px) {
-  body {
-    font-size: 20px;
-    overflow-x: hidden;
-  }
-
-  /* header */
-  header {
-    padding: 0 15px;
-    justify-content: center;
-  }
-
-  .logo {
-    position: absolute;
-    font-size: 30px;
-  }
-
-  .animate-flow {
-    font-size: 45px;
-  }
-
-  /* common */
-  section {
-    padding: 80px 0;
-  }
-  .title {
-    font-size: 35px;
-  }
-  .container {
-    padding: 0 1rem;
-  }
-  .col {
-    width: 100%;
-  }
-  .content-header {
-    margin-bottom: 35px;
-  }
-  .content-header > p {
-    font-size: 18px;
-    margin-top: 20px;
-  }
-
-  /* about me */
-  #aboutme .content-header {
-    margin-bottom: 60px;
-  }
-  #aboutme .content-wrap > div {
-    width: 100% !important;
-  }
-  .profile-l {
-    margin-bottom: 15px;
-  }
-  .info {
-    margin-top: 20px;
-    padding-top: 25px;
-  }
-  .profile-r {
-    padding-left: 0;
-  }
-  .img-wrap {
-    width: 100%;
-    height: auto;
-  }
-  .quotes {
-    width: 153px;
-    top: 120px;
-    right: 0;
-  }
-  .quotes span {
-    font-size: 32px;
-  }
-  .skills {
-    margin: 20px 0;
-  }
-  .skills i {
-    font-size: 50px;
-  }
-  .introduction p {
-    word-break: break-all;
-    line-height: 1.5;
-  }
-
   /* project */
   #project .col {
     padding-bottom: 30px;
@@ -1007,6 +1003,7 @@ footer i {
   .blog-post .txt-wrap {
     margin-top: 20px;
   }
+
   footer {
     height: 12vh;
   }
