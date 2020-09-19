@@ -81,6 +81,69 @@ nav {
   margin-right: 50px;
 }
 
+/* side menu button on mobile*/
+.burger-btn {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .burger-btn {
+    display: block;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .burger-btn div {
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: all 0.3s ease;
+    background-color: var(--font-color);
+  }
+
+  .nav-links {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    background-color: var(--color-3);
+  }
+
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  .close .bar1 {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+
+  .close .bar2 {
+    opacity: 0;
+  }
+
+  .close .bar3 {
+    transform: rotate(-45deg) translate(5px, -6px);
+  }
+}
+
 /* theme switching button */
 input[type='checkbox'] {
   position: absolute;
