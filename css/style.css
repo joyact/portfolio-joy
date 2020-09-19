@@ -232,74 +232,7 @@ input[type='checkbox'] {
   background-size: 100%;
 }
 
-/* Main Page - HOME*/
-#home {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
-
-.intro-txt {
-  text-align: center;
-}
-
-.animate-flow {
-  position: relative;
-  font-family: 'Inter', sans-serif;
-  font-weight: 900;
-  font-size: 80px;
-  letter-spacing: 1px;
-}
-
-.animate-flow .txt-wrap {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
-  overflow: hidden;
-}
-
-.animate-flow .letter {
-  display: inline-block;
-  line-height: 1em;
-  transform-origin: 0 0;
-}
-
-.intro-txt p:last-child {
-  border-top: 1px solid #aaa;
-  padding-top: 20px;
-  display: inline-block;
-  margin-top: 25px;
-}
-
-/* animate - bouncing */
-
-.arrow {
-  position: absolute;
-  bottom: 8%;
-  transform: translateX(-50%);
-  font-size: 10px;
-}
-
-.bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
-}
-
-.arrow + p {
-  position: absolute;
-  bottom: 5%;
-  font-size: 15px;
-  letter-spacing: -1px;
-  color: var(--point-color);
-}
-
-/* Main Page - common */
+/* common style */
 section {
   width: 100%;
   padding: 150px 0;
@@ -361,17 +294,76 @@ section:nth-child(2n) {
   padding-bottom: 0 !important;
 }
 
-#project .col {
-  padding-bottom: 40px;
-}
-
-#blog .col {
-  padding-bottom: 60px;
-}
-
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Main Page - HOME*/
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0;
+}
+
+.intro-txt {
+  text-align: center;
+}
+
+.animate-flow {
+  position: relative;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 80px;
+  letter-spacing: 1px;
+}
+
+.animate-flow .txt-wrap {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.animate-flow .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
+}
+
+.intro-txt p:last-child {
+  border-top: 1px solid #aaa;
+  padding-top: 20px;
+  display: inline-block;
+  margin-top: 25px;
+}
+
+/* Bouncing Animation*/
+.arrow {
+  position: absolute;
+  bottom: 8%;
+  transform: translateX(-50%);
+  font-size: 10px;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+.arrow + p {
+  position: absolute;
+  bottom: 5%;
+  font-size: 15px;
+  letter-spacing: -1px;
+  color: var(--point-color);
 }
 
 /* Main Page - ABOUT ME */
@@ -480,13 +472,17 @@ img {
 .skills i {
   font-size: 70px;
 }
-v
+
 /* Main Page - PORTFOLIO */
 
 #project .content-wrap {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+#project .col {
+  padding-bottom: 30px;
 }
 
 /* portfolio tab style */
@@ -650,6 +646,11 @@ v
 }
 
 /* Main Page - BLOG*/
+
+#blog .col {
+  padding-bottom: 60px;
+}
+
 .blog-post {
   box-sizing: border-box;
 }
