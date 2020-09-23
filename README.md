@@ -10,7 +10,7 @@ This is one-page portfolio with a toggler between light and dark mode. It contai
 
 ## Preview
 
-![preview](img/mainpage.gif)
+![preview](images/readme-preview.gif)
 
 ## Table of Contents
 
