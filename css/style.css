@@ -17,6 +17,7 @@
   --color-3: #f1f1f1;
   --p-color: #555555;
   --img-opacity: 1;
+  --notion: url(../images/notion.png) no-repeat center;
 }
 
 .theme-dark {
@@ -26,6 +27,7 @@
   --color-3: #13171b;
   --p-color: #aaaaaa;
   --img-opacity: 0.85;
+  --notion: url(../images/notion-dark.png) no-repeat center;
 }
 
 /* html */
@@ -900,7 +902,7 @@ footer i {
   display: block;
   width: 30px;
   height: 30px;
-  background: url(../images/notion.png) no-repeat center;
+  background: var(--notion);
 }
 
 @media screen and (max-width: 767px) {
