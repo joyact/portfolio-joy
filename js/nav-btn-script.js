@@ -30,11 +30,14 @@ function toggleTheme() {
 const navSlide = () => {
   const burgerBtn = document.querySelector('.burger-btn');
   const nav = document.querySelector('.nav-links');
+  const main = document.querySelector('main');
+  const foot = document.querySelector('footer');
+
   burgerBtn.addEventListener('click', () => {
-    //toggle navigation
-    nav.classList.toggle('nav-active');
-    //burger animateion
-    burgerBtn.classList.toggle('close');
+    nav.classList.toggle('nav-active'); //toggle navigation
+    burgerBtn.classList.toggle('close'); //burger animateion
+    main.classList.toggle('opacity');
+    foot.classList.toggle('opacity');
   });
 };
 navSlide();

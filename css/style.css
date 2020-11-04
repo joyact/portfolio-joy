@@ -36,6 +36,7 @@ body {
   font-size: 25px;
   font-weight: 300;
   box-sizing: border-box;
+  background-color: #999;
   color: var(--font-color);
 }
 
@@ -119,17 +120,35 @@ nav {
     justify-content: center;
     align-items: center;
     left: 0;
-    top: 0;
-    width: 70%;
-    height: 100vh;
+    top: 12vh;
+    width: 75%;
+    height: 88vh;
     transform: translateX(-100%);
     transition: all 0.5s ease;
-    background-color: var(--color-3);
+    background-color: var(--color-1);
+    border-top: 1px solid #aaa;
   }
 
   .nav-links li {
+    position: relative;
     margin-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+
+  .nav-links li:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    transform: rotate(45deg);
+    background-color: var(--point-color);
+    opacity: 0.85;
+  }
+  .nav-links li:first-child:before {
+    opacity: 0;
   }
 
   .nav-active {
@@ -146,6 +165,10 @@ nav {
 
   .close .bar3 {
     transform: rotate(-45deg) translate(5px, -6px);
+  }
+
+  .opacity {
+    opacity: 0.3;
   }
 }
 
@@ -424,6 +447,10 @@ img {
   .animate-flow {
     font-size: 45px;
   }
+
+  .intro-txt {
+    margin-bottom: 50px;
+  }
 }
 
 /* Main Page - ABOUT ME */
@@ -469,7 +496,7 @@ img {
 
 .quotes > span {
   display: block;
-  font-family: 'sans-serif';
+  font-family: sans-serif;
   font-weight: bold;
   font-size: 40px;
   font-style: italic;
